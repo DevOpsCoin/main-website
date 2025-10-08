@@ -1,5 +1,10 @@
 # $DEVOPS MemeCoin Website
 
+⚠️ **Important Update:**  
+$DEVOPS is **migrating to the BNB Smart Chain (BSC)**.  
+All previous Solana deployments are deprecated and no longer represent the official token.  
+The website structure remains intact while wallet sections and token links are being updated for BNB.
+
 A modern, community-driven memecoin project site built for DevOpsCoin. This static site uses Tailwind CSS for styling, SVG icons for a professional look, and a dynamic header for maintainability. Deployed via GitHub Pages.
 
 ## Features

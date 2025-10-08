@@ -19,7 +19,8 @@
   <body class="bg-gray-950 text-gray-100">
     <div id="header-placeholder"></div>
     <script src="assets/load-header.js"></script>
-    <div class="container max-w-4xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg">
+
+    <div class="container max-w-4xl mx-auto mt-8 p-8 bg-gray-900 rounded-xl shadow-lg">
       <h1 class="text-3xl sm:text-4xl font-bold text-cyan-400 mb-4 flex items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
@@ -39,7 +40,7 @@
         </h2>
         <ul class="list-disc pl-6 space-y-2 text-gray-300">
           <li>🛠️ Treating $DEVOPS like a true DevOps project — with real tasks, issues, and workflows.</li>
-          <li>� All work items are tracked in GitHub Project boards for visibility and async collaboration.</li>
+          <li>📋 All work items are tracked in GitHub Project boards for visibility and async collaboration.</li>
           <li>🚀 Phased roadmap: Foundation → Stealth Builder Launch → Public Launch → Build & Integrate.</li>
           <li>📝 Tasks are categorized, labeled, and moved through planning, development, and completion stages like any professional dev team would.</li>
           <li>🌍 The roadmap is <strong>public</strong> — anyone can follow along or contribute.</li>
@@ -57,7 +58,7 @@
         </a>
       </div>
       <p class="text-gray-500 text-sm mt-4 text-center">
-        Last updated: October 2025 — Roadmap evolves as the project does.
+        Last updated: October 2025 — Roadmap reflects migration to BNB Smart Chain.
       </p>
       <a href="index.html" class="mt-8 inline-flex items-center px-4 py-2 bg-cyan-700 text-white rounded-lg font-semibold shadow hover:bg-cyan-400 transition">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,6 +68,7 @@
         Back to Home
       </a>
     </div>
+
     <div id="footer-placeholder"></div>
     <script>
       fetch('assets/footer.html')
@@ -74,6 +76,6 @@
       .then(html => {
         document.getElementById('footer-placeholder').innerHTML = html;
       });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
