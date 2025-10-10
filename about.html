@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About — $DEVOPS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <div id="header-placeholder"></div>
+  <script src="assets/load-header.js"></script>
+
+  <!-- ABOUT SECTION -->
+  <section id="team" class="container max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg">
+    <h1 class="text-3xl font-bold text-cyan-400 mb-4 text-center">Meet the Devs</h1>
+    <img src="assets/rick-baker.jpg" alt="Rick Baker" class="profile-pic mx-auto mb-4 glow-cyan">
+    <h2 class="text-2xl font-semibold text-cyan-300 text-center">Rick Baker</h2>
+    <p class="bio text-gray-300 text-center mt-3">
+      Director of Cloud Technology & DevOps Engineer. Builder of systems, pipelines, and coins. 
+      Passionate about blending automation, open-source, and meme culture into a unique Web3 ecosystem.
+    </p>
+  </section>
+
+  <!-- SOCIALS SECTION -->
+  <section id="community" class="container max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4 text-center">Community & Socials</h2>
+    <p class="text-gray-300 text-center mb-6">
+      Connect with the DevOpsCoin community and follow project updates across our official channels.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://x.com/DevOpsCoin" target="_blank" rel="noopener" 
+         class="nav-btn glow-cyan">Follow on X</a>
+      <a href="https://t.me/TheDevOpsCoin" target="_blank" rel="noopener" 
+         class="nav-btn glow-cyan">Join Telegram</a>
+      <a href="https://github.com/DevOpsCoin-LLC" target="_blank" rel="noopener" 
+         class="nav-btn glow-cyan">GitHub Org</a>
+    </div>
+  </section>
+
+  <!-- LEGAL SECTION -->
+  <section id="legal" class="container max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg mb-16">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4 text-center">Legal & Disclaimers</h2>
+    <p class="text-gray-300 mb-4">
+      DevOpsCoin is a community-driven project built for experimentation, education, and entertainment. 
+      It is <strong>not a registered security</strong>, investment vehicle, or financial product. 
+      Participation in this ecosystem is voluntary and at your own risk.
+    </p>
+    <p class="text-gray-400 mb-4">
+      Always verify contract addresses and ensure you are interacting with official links. 
+      The DevOpsCoin project and its contributors provide no guarantees, and smart contracts are immutable once deployed.
+    </p>
+    <p class="text-gray-400 italic text-sm">
+      © 2025 DevOpsCoin LLC. All rights reserved. Licensed under MIT.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('assets/footer.html')
+      .then(r => r.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      });
+  </script>
+</body>
+</html>
