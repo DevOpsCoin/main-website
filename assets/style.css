@@ -2,7 +2,7 @@
 body {
   margin: 0;
   background: #0a0a0a; /* dark gunmetal */
-  color: #ffffff; /* main text is clean white */
+  color: #ffffff;
   font-family: 'Inter', 'Poppins', 'SF Pro', sans-serif;
   text-align: center;
   display: flex;
@@ -26,7 +26,7 @@ body {
 
 /* === TYPOGRAPHY === */
 h1, h2, h3 {
-  color: #1dd3c6; /* teal accent */
+  color: #1dd3c6;
 }
 
 a {
@@ -38,6 +38,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* === TAGLINES & SECTIONS === */
 .tagline {
   font-size: 1.2rem;
   margin-top: 20px;
@@ -121,10 +122,10 @@ a:hover {
   margin: 40px auto;
   padding: 0 20px;
   text-align: left;
-  background: #121212; /* slightly lighter than #111 for contrast */
+  background: #121212;
   border-radius: 10px;
   border: 1px solid #1dd3c622;
-  box-shadow: 0 2px 16px 0 #1dd3c633; /* soft teal shadow */
+  box-shadow: 0 2px 16px 0 #1dd3c633;
 }
 
 .container h1, .container h2, .container h3 {
@@ -185,7 +186,7 @@ a:hover {
   color: #e0e0e0;
 }
 
-/* === NAVIGATION BUTTONS (unified style) === */
+/* === NAVIGATION BUTTONS === */
 .nav-btn {
   display: inline-flex;
   align-items: center;
@@ -193,12 +194,41 @@ a:hover {
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease-in-out;
   background: linear-gradient(to bottom right, #0ea5e9, #0891b2);
   color: #fff;
   box-shadow: 0 2px 6px rgba(0, 255, 255, 0.15);
 }
 
+/* === SVG ICON GLOW / ANIMATION === */
+.nav-btn svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  filter: drop-shadow(0 0 4px rgba(29, 211, 198, 0.4));
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.nav-btn:hover svg {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(29, 211, 198, 0.9));
+}
+
+/* subtle pulse on special nav items (like Ship-It Fund) */
+@keyframes pulse-slow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(29, 211, 198, 0.5));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(29, 211, 198, 0.8));
+    transform: scale(1.05);
+  }
+}
+.nav-btn.pulse svg {
+  animation: pulse-slow 3.5s ease-in-out infinite;
+}
+
+/* === NAV HOVER / ACTIVE === */
 .nav-btn:hover {
   background: linear-gradient(to bottom right, #22d3ee, #0ea5e9);
   box-shadow: 0 0 12px rgba(29, 211, 198, 0.4);
