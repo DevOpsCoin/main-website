@@ -10,13 +10,14 @@
   <div id="launch-banner"
        class="container max-w-4xl mx-auto mt-4 mb-2 p-4 bg-cyan-900/30 border border-cyan-700 text-cyan-100 rounded-lg text-center shadow-inner backdrop-blur-sm">
     <p class="font-semibold text-lg mb-1">
-      🚀 <span class="text-cyan-300">$DEVOPS</span> Launching <strong>January 1, 2026</strong>
+      🚀 <span class="text-cyan-300">$DEVOPS</span> Launching
+      <strong id="launch-date-label">Winter 2025–2026</strong>
     </p>
-    <p id="countdown" class="text-2xl font-bold text-cyan-400 tracking-wider mb-1"></p>
+    <p id="countdown" class="text-2xl font-bold text-cyan-400 tracking-wider mb-1">Coming Soon</p>
     <p class="mt-1 text-sm text-cyan-300">
       <span id="launch-status" class="inline-flex items-center gap-1">
         <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
-        Stealth Build Phase
+        Build Phase
       </span>
     </p>
   </div>
@@ -25,9 +26,11 @@
   <nav class="flex flex-wrap justify-center gap-3 md:gap-4 my-6 px-3">
     <!-- Home -->
     <a href="index.html" data-nav="index.html" class="nav-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
         <rect x="3" y="4" width="18" height="16" rx="2" class="fill-gray-800"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4v4m8-4v4M3 10h18" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 4v4m8-4v4M3 10h18" />
       </svg>
       Home
     </a>
@@ -35,61 +38,75 @@
     <!-- Ship-It Fund (highlighted) -->
     <a href="shipit.html" data-nav="shipit.html"
        class="nav-btn bg-gradient-to-br from-cyan-500 to-teal-400 hover:from-cyan-400 hover:to-teal-300 text-white shadow-lg font-semibold px-4 py-2 rounded-lg flex items-center gap-2 justify-center animate-pulse-slow">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0v10l6 3" />
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0v10l6 3" />
       </svg>
       Ship-It Fund
     </a>
 
     <!-- Whitepaper -->
     <a href="whitepaper.html" data-nav="whitepaper.html" class="nav-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
         <rect x="4" y="4" width="16" height="16" rx="2" class="fill-gray-800"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9h6v6H9z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 9h6v6H9z" />
       </svg>
       Whitepaper
     </a>
 
     <!-- Roadmap -->
     <a href="roadmap.html" data-nav="roadmap.html" class="nav-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
         <rect x="3" y="7" width="18" height="14" rx="2" class="fill-gray-800"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3v4m8-4v4M3 11h18" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 3v4m8-4v4M3 11h18" />
       </svg>
       Roadmap
     </a>
 
     <!-- Meet the Devs -->
     <a href="meet-the-devs.html" data-nav="meet-the-devs.html" class="nav-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
         <rect x="3" y="4" width="18" height="16" rx="2" class="fill-gray-800"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4v4m8-4v4M3 10h18" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 4v4m8-4v4M3 10h18" />
       </svg>
       Meet the Devs
     </a>
 
     <!-- Join Us -->
     <a href="join.html" data-nav="join.html" class="nav-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3" />
       </svg>
       Join Us
     </a>
 
     <!-- Socials -->
     <a href="socials.html" data-nav="socials.html" class="nav-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
         <circle cx="12" cy="12" r="10" class="fill-gray-800"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 12h20M12 2a10 10 0 000 20" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2 12h20M12 2a10 10 0 000 20" />
       </svg>
       Socials
     </a>
 
     <!-- Legal -->
     <a href="legal.html" data-nav="legal.html" class="nav-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
         <rect x="4" y="4" width="16" height="16" rx="2" class="fill-gray-800"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8h8v8H8z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 8h8v8H8z" />
       </svg>
       Legal
     </a>
@@ -98,30 +115,51 @@
   <hr class="border-cyan-800/40 max-w-5xl mx-auto mb-6">
 </header>
 
-<!-- NAV LOGIC -->
+<!-- NAV + COUNTDOWN LOGIC -->
 <script>
-  // Countdown Timer
+  // === CONFIG: set this when launch is known ===
+  // const targetDate = "2025-12-15T00:00:00Z";
+  const targetDate = null; // null = Coming Soon
+
   const countdownEl = document.getElementById('countdown');
-  const targetDate = new Date('2026-01-01T00:00:00Z').getTime();
+  const launchLabel = document.getElementById('launch-date-label');
+  const launchStatus = document.getElementById('launch-status');
+
   function updateCountdown() {
+    if (!targetDate) {
+      countdownEl.textContent = "Coming Soon";
+      launchStatus.innerHTML =
+        '<span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span> Build Phase';
+      return;
+    }
+
     const now = Date.now();
-    const diff = targetDate - now;
+    const diff = new Date(targetDate).getTime() - now;
+
     if (diff <= 0) {
       countdownEl.textContent = "🚀 Launch Complete!";
-      document.getElementById('launch-status').innerHTML =
+      launchStatus.innerHTML =
         '<span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Live on BNB';
       clearInterval(timer);
       return;
     }
+
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     const mins = Math.floor((diff / (1000 * 60)) % 60);
     countdownEl.textContent = `${days}d ${hours}h ${mins}m`;
+
+    // Optional: dynamic phase
+    if (days < 10) {
+      launchStatus.innerHTML =
+        '<span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Final Prep';
+    }
   }
+
   updateCountdown();
   const timer = setInterval(updateCountdown, 60000);
 
-  // Nav Highlight Logic
+  // === NAV Highlight Logic ===
   const navLinks = document.querySelectorAll('.nav-btn');
   const current = window.location.pathname.split('/').pop() || 'index.html';
   navLinks.forEach(link => {
